@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function isKeyPressed(event){
+            if(event.ctrlKey==1){
+                alert("Ctrl被按下！");
+            }else{
+                alert("Ctrl没有被按下！");
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="text" onkeydown="isKeyPressed(event)">
+</body>
+</html>
