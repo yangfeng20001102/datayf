@@ -1,0 +1,95 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .button input {
+            width: 100px;
+            height: 30px;
+            border: none;
+            background-color: lightgray;
+        }
+
+        .button input:hover {
+            background-color: gray;
+
+        }
+    </style>
+</head>
+
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <td colspan="2" align="center">性别统计表</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>姓名:</td>
+                <td><input type="text" placeholder="请输入您的名字..."></td>
+            </tr>
+            <tr>
+                <td>年龄:</td>
+                <td><input type="text" placeholder="请输入您的年龄..."></td>
+            </tr>
+            <tr>
+                <td>性别</td>
+                <td>
+                    <label>
+                        <input type="radio" name="sex" value="1">男
+                    </label>
+                    <label>
+                        <input type="radio" name="sex" value="0">女
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>爱好：</td>
+                <td><label>
+                        <input type="checkbox">旅游
+                    </label>
+                    <label>
+                        <input type="checkbox">登山
+                    </label>
+                    <label>
+                        <input type="checkbox">健身
+                    </label>
+                    <label>
+                        <input type="checkbox">上网
+                    </label>
+                    <label>
+                        <input type="checkbox">游泳</label>
+                </td>
+            </tr>
+            <tr>
+                <td>学历：</td>
+                <td><select name="">
+                        <option value="">--请选择--</option>
+                        <option value="1">专科</option>
+                        <option value="2">本科</option>
+                        <option value="3">硕士</option>
+                        <option value="4">博士及以上</option>
+                    </select>
+                </td>
+            </tr>
+            <tr align="center">
+                <td>自我介绍：</td>
+                <td>
+                    <textarea placeholder="自我介绍：" cols="30" rows="5"></textarea>
+                </td>
+            </tr>
+        </tbody>
+        <tr align="center" class="button">
+            <td colspan="2">
+                <input type="submit">
+                <input type="reset">
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
