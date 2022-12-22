@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="start">
+        <input id="SUN" type="text">
+        <button id="copy" onclick="copy()">复制</button>
+        <input id="quan" type="text"><br>
+        <span id="xian" style="color:blue;"></span>
+    </div>
+
+<script>
+    function copy() {
+        var sun = document.getElementById("SUN").value;
+        document.getElementById("quan").value = sun;
+        document.getElementById("xian").innerHTML = "复制成功";
+    }
+</script>
+
+</body>
+</html>
